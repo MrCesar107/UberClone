@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:background="@color/colorPrimary"
-    tools:context=".MainActivity">
+    tools:context=".SelectOptionAuthActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
@@ -22,40 +24,32 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="UberClone es una app similar a Uber"
+            android:text="Selecciona una opción"
             android:textAlignment="center"
             android:textColor="@color/colorText"
             android:textSize="18sp"
             android:layout_margin="40dp"
             android:textStyle="bold"/>
 
-        <LinearLayout
+        <Button
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="bottom"
-            android:layout_margin="20dp">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/colorBlueLight"
+            android:textColor="@color/colorText"
+            android:text="YA TENGO CUENTA"/>
 
-            <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_button"
-                android:backgroundTint="@color/colorBlueLight"
-                android:textColor="@color/colorText"
-                android:layout_marginRight="5dp"
-                android:text="SOY CONDUCTOR"/>
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_button"
-                android:backgroundTint="@color/colorText"
-                android:layout_marginLeft="5dp"
-                android:text="SOY CLIENTE"/>
-
-        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/colorText"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="REGISTRARME"/>
 
     </LinearLayout>
 
