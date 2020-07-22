@@ -7,6 +7,8 @@
     android:fitsSystemWindows="true"
     tools:context=".LoginActivity">
 
+    <include layout="@layout/action_bar_toolbar"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -35,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp">
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Correo"
@@ -58,6 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp">
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Contraseña"
@@ -72,9 +76,10 @@
             android:orientation="vertical"
             android:gravity="bottom">
             <Button
+                android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Registrar"
+                android:text="Ingresar"
                 android:layout_marginBottom="30dp"
                 android:background="@drawable/rounded_button"
                 android:backgroundTint="@color/colorPrimary"
